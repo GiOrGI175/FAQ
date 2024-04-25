@@ -6,13 +6,19 @@
 
 :root {
   --white: #ffffff;
-  --grey: #979797;
+  --grey: #e8e8ea;
   --orange: #f47b56;
+  --black: #4b4c5f;
+  --black_2: #1e1f36;
 }
 
 body {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  align-items: center;
   font-family: 'Kumbh Sans', sans-serif;
   background-image: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
 }
@@ -20,27 +26,27 @@ body {
 .main_page {
   max-width: 1440px;
   height: 100vh;
-  /*! აქ auto-ს მაგივარად fit-content   max-content  min-content როგრ იმუშავებდა? */
-  margin: 0 auto;
   display: flex;
+  flex-direction: column;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .FAQ {
   width: 920px;
   height: 509px;
   border-radius: 23px;
+  /* margin-top: 130px; */
+
   display: flex;
   justify-content: space-between;
   background-color: var(--white);
-  overflow: hidden;
-  z-index: 1;
+  /* overflow: hidden; */
+  /* z-index: 1; */
 }
 
 .border_1 {
   position: relative;
-  z-index: -1;
 }
 
 .border_2 {
@@ -53,24 +59,20 @@ body {
   z-index: 2;
   width: fit-content;
   top: -580px;
-  /* margin-top: 71px; */
 }
 
 .foto_box_shadow {
-  /* width: 964px;
-  height: 568px;
-  // opacity: 0.9; 
-  position: relative;
-  border-radius: 23px;
-  top: -220px;
-  left: -600px;
-  z-index: 1;
-  transform: rotate(-42deg);
-  background-color: #f2f2f2; */
   width: fit-content;
   position: relative;
   top: -930px;
-  z-index: 1;
+  /* z-index: 1; */
+}
+
+.foto_cube {
+  position: relative;
+  top: -1300px;
+  left: -90px;
+  z-index: 20;
 }
 
 .FAQ_box2 {
@@ -81,23 +83,53 @@ body {
 
 .FAQ_box2 h1 {
   margin-bottom: 35px;
+  color: var(--black_2);
 }
 
 .box_size {
   width: 350px;
-  height: 35px;
   margin-bottom: 16px;
-  border-bottom: 1px solid #979797;
+  border-bottom: 1px solid var(--grey);
 }
 
 .FAQ_box2 .question {
   width: 350px;
+  padding-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  display: flex;
-  justify-content: space-between;
+  color: var(--black);
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
 }
 .FAQ_box2 .question:hover {
   color: var(--orange);
+  cursor: pointer;
 }
+
+.hidden_answr {
+  display: none;
+  width: 350px;
+  padding-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--black);
+}
+
+/* .show_answr {
+  display: block;
+  width: 350px;
+  padding-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--black);
+} */
