@@ -6,6 +6,8 @@
 
 :root {
   --white: #ffffff;
+  --grey: #979797;
+  --orange: #f47b56;
 }
 
 body {
@@ -84,11 +86,18 @@ body {
 .box_size {
   width: 350px;
   height: 35px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #979797;
 }
 
-.FAQ_box2 p {
+.FAQ_box2 .question {
   width: 350px;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+.FAQ_box2 .question:hover {
+  color: var(--orange);
 }
