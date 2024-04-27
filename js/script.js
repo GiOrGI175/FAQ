@@ -1,12 +1,14 @@
 let question = Array.from(document.getElementsByClassName('question'));
+let arrows = Array.from(document.querySelectorAll('.arrow'));
 
-let rotatearw = Array.from(document.getElementsByClassName('arrow'));
-
-function toggleanswers(question, rotatearw) {
+function toggleanswers(question) {
   question.addEventListener('click', function (event) {
     let answer = event.currentTarget.nextElementSibling;
-    answer.classList.toggle('show_answr');
-    rotatearwevent.currentTarget.classList.add('rotate');
+    answer.classList.toggle('diplayblock');
+    let boldquestion = event.currentTarget;
+    boldquestion.classList.toggle('boldquestion');
+    let arrow = arrows.forEach(index);
+    arrow.classList.toggle('rotate');
   });
 }
 

@@ -112,11 +112,9 @@ body {
   cursor: pointer;
 }
 
-.hidden_answr {
-  display: none !important;
+.answr {
   width: 350px;
   padding-bottom: 18px;
-  display: flex;
   justify-content: space-between;
   font-weight: 400;
   font-size: 14px;
@@ -124,7 +122,19 @@ body {
   color: var(--black);
 }
 
-.show_answr {
+/* js class start */
+
+.boldquestion {
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  line-height: 17px !important;
+}
+
+.diplaynone {
+  display: none;
+}
+
+.diplayblock {
   display: block !important;
   width: 350px;
   padding-bottom: 18px;
@@ -139,3 +149,5 @@ body {
 .rotate {
   transform: rotate(180deg) !important;
 }
+
+/* js class end */
