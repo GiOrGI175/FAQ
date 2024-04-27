@@ -7,11 +7,8 @@ function toggleanswers(question, arrows, index) {
     answer.classList.toggle('diplayblock');
     let boldquestion = event.currentTarget;
     boldquestion.classList.toggle('boldquestion');
-    if (answer.classList.includes('diplayblock')) {
-      arrows[index].classList.add('rotate');
-    } else {
-      arrows[index].classList.remove('rotate');
-    }
+    let arrows = event.currentTarget.lastElementChild;
+    arrows.classList.toggle('rotate');
   });
 }
 question.forEach(toggleanswers);
