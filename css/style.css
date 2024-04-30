@@ -30,7 +30,7 @@ body {
 
 .FAQ {
   width: 920px;
-  max-height: 750px;
+  max-height: 800px;
   border-radius: 23px;
   display: flex;
   justify-content: space-between;
@@ -39,7 +39,6 @@ body {
 
 .FAQ_box1 {
   height: 509px;
-  overflow: hidden;
 }
 
 .border_1 {
@@ -110,16 +109,6 @@ body {
   cursor: pointer;
 }
 
-.answr {
-  width: 350px;
-  padding-bottom: 18px;
-  justify-content: space-between;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: var(--black);
-}
-
 /* js class start */
 
 .boldquestion {
@@ -135,7 +124,7 @@ body {
 
 .diplayblock {
   display: block !important;
-  width: 350px;
+  width: 350px !important;
   padding-bottom: 18px;
   display: flex;
   justify-content: space-between;
@@ -150,3 +139,99 @@ body {
 }
 
 /* js class end */
+
+/*  */
+
+/* responsive start */
+
+/*  */
+
+/* mobile responsive start */
+
+@media screen and (max-width: 1000px) {
+  .border_1 {
+    display: none;
+  }
+
+  .border_2 {
+    display: none;
+  }
+
+  .foto_box {
+    display: none;
+  }
+
+  .foto_box_shadow {
+    display: none;
+  }
+
+  .foto_cube {
+    display: none;
+  }
+
+  .FAQ {
+    width: 327px;
+    max-height: 900px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .FAQ_box1 {
+    width: 280px;
+    height: 185px;
+    display: flex;
+    position: relative;
+    top: -110px;
+    background-image: url(../img/Group\ 4.png);
+  }
+
+  .img_for_responsive {
+    width: 241px;
+    height: 208px;
+    position: relative;
+    left: 26px;
+    background-image: url(../img/shadow-mobile.png);
+  }
+
+  .FAQ_box2 {
+    display: block;
+    width: 279px;
+    height: fit-content;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -60px;
+  }
+
+  .FAQ_box2 h1 {
+    text-align: center;
+  }
+
+  .FAQ_box2 .question {
+    width: 279px;
+    font-size: 13px;
+  }
+
+  .box_size {
+    width: 279px;
+  }
+
+  .diplayblock {
+    width: 279px !important;
+    font-size: 12px;
+  }
+
+  .boldquestion {
+    font-size: 13px !important;
+  }
+}
+
+/* mobile responsive end */
+
+/*  */
+
+/* responsive end */
+
+/*  */
